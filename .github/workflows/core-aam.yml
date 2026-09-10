@@ -19,6 +19,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - run: |
-          curl https://api.specref.org
-          curl https://respec.org
+      - run: curl https://api.specref.org
+      - run: curl https://respec.org
