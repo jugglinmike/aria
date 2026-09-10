@@ -20,5 +20,5 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - run: |
-          curl https://api.respec.org
+          curl https://api.specref.org
           curl https://respec.org
