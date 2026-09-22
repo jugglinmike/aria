@@ -24,7 +24,7 @@ jobs:
           node-version: 24.x
       - run: curl https://api.specref.org
       - run: curl https://respec.org
-      - run: git clone git@github.com:w3c/spec-prod.git
+      - run: git clone https://github.com/w3c/spec-prod.git
       - run: cd spec-prod && git checkout 26674a8578635eaba312701bcb5b196113d00670
       - run: cd spec-prod && git apply ../dont-delete.patch
       - run: cd spec-prod && npm install
