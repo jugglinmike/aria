@@ -28,5 +28,6 @@ jobs:
       - run: cd spec-prod && git checkout 26674a8578635eaba312701bcb5b196113d00670
       - run: cd spec-prod && git apply ../dont-delete.patch
       - run: cd spec-prod && npm install
+      - run: npm install -g respec@37.3.6
       - run: ./build.sh
       - run: grep -E '^\s*This document describes' core-aam/index.html.built.html
