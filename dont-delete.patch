@@ -1,0 +1,13 @@
+diff --git a/src/build.ts b/src/build.ts
+index 90c1534..5b9a71e 100644
+--- a/src/build.ts
++++ b/src/build.ts
+@@ -157,7 +157,7 @@ async function copyRelevantAssets(
+ 		await writeFile(destinationFile, text, "utf8");
+ 	}
+ 
+-	await unlink(tmpOutFile);
++	//await unlink(tmpOutFile);
+ 
+ 	// List all files in output directory
+ 	await sh(`ls -R`, { output: "buffer", cwd: destinationDir });
